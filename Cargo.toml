@@ -1,0 +1,28 @@
+[package]
+name = "test-rust"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio-tungstenite = "0.18.0"
+#tungstenite = { version = "0.18.0", features = ["native-tls"] } 
+#anyhow = "1.0.66"
+dashmap = "5.4.0"
+futures-util = "0.3.25"
+tokio = { version = "1.23", features = ["full"] }
+serde = "1.0.151"
+serde_json = "1.0.89"
+futures = "0.3.25"
+
+ezsockets = { version = "0.4.0", path = "../ezsockets" }
+async-trait = "0.1.60"
+tracing = "0.1.31"
+
+#[dev-dependencies]
+#tokio = { version = "1.17.0", features = ["full"] }
+#tracing-subscriber = "0.3.9"
+tracing-subscriber = { version = "0.3", default-features = true }
+url = "2.2.2"
+#tungstenite = { version = "0.18.0", features = ["native-tls"] } 
